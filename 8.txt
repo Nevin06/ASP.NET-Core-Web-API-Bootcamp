@@ -1,0 +1,5 @@
+0:14
+1) Client running in browser, REST API running on web server, behind that a database
+2) When API is called the get request, it will return the state eg: book(author, name of the book, amount of pages
+and so on)
+3)Json info sheet?

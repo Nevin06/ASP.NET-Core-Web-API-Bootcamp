@@ -1,0 +1,10 @@
+1) Interface Address service will live in the buisness layer, responsible for wiring everything needed to work with
+addresses(creating addresses/getting addresses)
+2) Dtos folder will also be in common, Dtos  will be used not only by our API but aslo used by the buisness layer
+to map from the Dto to our entities
+3) Records are simple data structures that you can really use for details
+(Used for simple data objects that have no logic)
+4) Don't need to send address of employees, done by EmployeeController
+(when we create employee, we are going to assign the address there)
+5) [] Decorators give attribute to a controller
+

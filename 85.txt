@@ -1,0 +1,6 @@
+Registration
+1) Host ur application in Azure
+https://azure.microsoft.com/en-us/
+https://azure.microsoft.com/en-us/free/
+https://signup.azure.com/screen
+https://portal.azure.com/#home

@@ -1,0 +1,18 @@
+HTTP
+Hypertext Transfer Protocol
+1) Transfer data from 1 machine to another(either in local network or www)
+2) Web browser to load a web page -> Sending an http request, get back an http response(contains all the data that
+you need to run this page on the browser)
+3) Data transfer protocol for distributed systems
+4) www is built on this protocol
+5) Loading webpages relying on http (hypertext links to send an http req and getback a response)
+6) Stateless protocol(doesn't keep track of the application's state)
+7) Standardized by WWW consortium
+8) Current ver 3
+1:42
+9) http:// -> (Get Request) -> Web browser -> (Response Statuscode 200 {Payload} -> client(Web browser)
+									Data that comes along with status code
+									eg: Html needed to run webpage
+									OR Data in an API , also adjacent json format
+
+

@@ -1,0 +1,24 @@
+The 2 Approaches
+Code First and Database First
+
+Why 2 approaches?
+Sometimes the Db already exists
+
+1) If Db doesn't exist, go with Code first approach 
+	1) Create Entity Classes (C# classes to define data model)
+		2) Create DbContext
+			3) Create Migration (created by entity framework core)
+				Tell EFCore to create a migration using Entity Classes & DbContext-> Migration file
+				Use this migration file with EFCore to generate/create ur DB
+
+	1)Changes to ur Entity classes
+				3)Create next migration
+	Entity framework will look at what differences are there with the Entity framework and ur DB and creates 
+	right migration file
+	Run the migration file and changes will be applied to DB
+
+2) DB First approach
+[Not recommended if you already have a DB]
+	1) Create DB schema(Don't need to do this if you already have one)
+		2) (EFCore provides command to) Generate Entities and DbContext
+						create	(classes)

@@ -1,0 +1,4 @@
+HTTP Context
+1) represents the current HTTP request we are currently working with
+2) contains all information about the HTTP request and the HTTP response
+3) we have exits for our HTTP Context in our controllers and our middlewares

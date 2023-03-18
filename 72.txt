@@ -1,0 +1,3 @@
+Fluent validation nuget package -> Business Layer
+1) lot of advantages, very convenient to implement some validation logic
+2) validating Dtos, because the Dtos are the things coming from outside and these are the inputs we have to validate

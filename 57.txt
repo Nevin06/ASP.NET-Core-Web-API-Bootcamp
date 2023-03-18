@@ -1,0 +1,2 @@
+Enable Open API support -> Adds swagger(we have dynamic API documentation we can use to test our endpoints
+and send some test requests

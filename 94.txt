@@ -1,0 +1,10 @@
+Postman Test
+
+Download Postman Windows App
+1) My Workspace -> New HTTP request -> Authorization Tab -> Type is OAuth2.0 -> Configure New Token
+
+AADSTS500113: No reply address is registered for the application. => Error
+Azure Active Directory -> App Registrations -> Owned Applications(Course Project) -> Add Redirect URL -> Add platform
+-> Web -> Paste callback URL from Postman here
+
+My Workspace -> New HTTP request -> Authorization Tab -> Type is OAuth2.0 -> Configure New Token -> Use Token

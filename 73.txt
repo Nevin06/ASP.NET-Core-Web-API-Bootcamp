@@ -1,0 +1,25 @@
+In JobService.cs
+	We can have
+	1) If entity is null, JobNotFoundException in DeleteJobAsync() 
+	   if entity.Employees is null, DependentEmployeesExistException in DeleteJobAsync()
+	2) If entity is null, JobNotFoundException in GetJobAsync()
+	4) If existingJob is null, JobNotFoundException in UpdateJobAsync()
+
+In TeamService.cs
+	We can have
+	0) missingEmployees in CreateTeamAsync()
+	1) If entity is null, TeamNotFoundException in DeleteTeamAsync()
+	   if entity.Employees.Count > 0, DependentEmployeesExistException in DeleteTeamAsync()		?
+	2) If entity is null, TeamNotFoundException in GetTeamAsync()
+	4) If existingTeam is null, TeamNotFoundException in UpdateTeamAsync()
+	   missingEmployees in UpdateTeamAsync()
+
+In EmployeeService.cs
+	We can have
+	1) If entity is null, EmployeeNotFoundException in DeleteEmployeeAsync()
+	   if entity.Address is not null, DependentAddressExistException in DeleteEmployeeAsync()	?
+	   if entity.Job is not null, DependentJobExistException in DeleteEmployeeAsync()		?
+	   if entity.Teams.Count > 0, DependentTeamsExistException in DeleteEmployeeAsync()		?
+	2) If entity is null, EmployeeNotFoundException in GetEmployeeAsync()
+	4) If existingEmployee is null, EmployeeNotFoundException in UpdateEmployeeAsync()
+

@@ -1,0 +1,3 @@
+Data Model
+1) LINQ is all about querying data(so need data model)
+2) Lawyer, client, cases

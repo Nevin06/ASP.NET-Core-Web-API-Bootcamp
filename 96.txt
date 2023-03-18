@@ -1,0 +1,11 @@
+Swagger Authorization Code Flow + PKCE
+1) Don't need to use client secret
+2) Use swagger support for authentication -> Don't need to send client secret anymore -> Best practice for single
+page applications because we have a client application running on browser and we don't want credentials in there 
+3) Add another platform in Azure portal
+
+Before run application -> Address/Get
+Authorize
+AADSTS50011: The redirect URI 'https://localhost:7289/swagger/oauth2-redirect.html' specified in the request does not match the redirect URIs configured for the application '155431cf-d21f-4571-85c2-cc4c56813eb9'. Make sure the redirect URI sent in the request matches one added to your application in the Azure portal. Navigate to https://aka.ms/redirectUriMismatchError to learn more about how to fix this.
+
+

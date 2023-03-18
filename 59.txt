@@ -1,0 +1,3 @@
+//59
+//Put all classes that are shared between several projects
+//eg in Business project and database(will be in the search project we are going to create)

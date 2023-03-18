@@ -1,0 +1,4 @@
+1) We can register our middleware in Program.cs
+2) for each http request these middlewares will be used.
+3) use RequestDelegate(fn that can process http requests) in all our middlewares
+4) Invoke will be called by ASP.Net core

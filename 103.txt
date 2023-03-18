@@ -1,0 +1,1 @@
+Sinks are used to write to different targets for example db file or we even use HTTP so that we can post it to an API

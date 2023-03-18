@@ -1,0 +1,20 @@
+Use EFCore and dbContext to generate the DB
+
+1) All things that have side effects on external sources like APIs, databases, files, stuff like that is living
+in the infrastructure layer => Put ApplicationDbContext in this layer
+2) Microsoft.AspNetCore.Identity.EntityFrameworkCore => To add some identity to our application for authorization
+and authentication
+3) Microsoft.EntityFrameworkCore.Sqlite
+4) IdentityUser => Built in user for Microsoft.AspNetCore.Identity package
+5) Dataset for each of these entities
+6) Add project reference to our common project to be able to access these classes
+7) Program.cs(Courseproject.API) update so that db gets generated
+	1) Add our ApplicationDbContext to our dependency injection container
+		!) dependency injection container is used to handle creation and the lifetime of our instances
+		in one place(Program.cs)
+	2) Add project reference Courseroject.Infrastructure to Courseproject.API
+	3) create/generate db -> create a scope out of our services, out of our service provider to be able to
+	get our ApplicationDbContext and call the generation of the db on it.
+8) Employees Table has AddressId and JobId as foreign keys that connects Employees to Addresses and Jobs
+
+

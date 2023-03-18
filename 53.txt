@@ -1,0 +1,25 @@
+Middlewares
+Pipeline
+Middleware1 -> Middleware2 -> Middleware3 -> Endpoint
+
+1) Before the endpoint method in our controller is called, ASP.NET core calls middleware for each request
+2) Can build a pipeline using these middlewares
+
+Cancellation
+Middleware1 -> Middleware2 -> Auth Middleware => Not Authorized -> 403 Response
+
+3)Build in Middlewares in ASP.Net core like 
+	1)Authentication & Authorization Middleware
+	2) Cross Origin Resource Sharing(CORS)
+	3)Header Propagation (HTTP request contain certain header, can propagate it when you are using http clients
+	to call another API in ur backend, then you can propagate headers from ur request to the request you are
+	sending HTTP client and ASP.Net core
+	4) HTTPS Redirection
+	5) HTTP Logging(This Middleware is logging all http requests and http responses)
+	6) Single Page Application(Important if we have an app containing our API , containg our client application
+	in Angular/ React)
+
+Order
+Authentication -> Authorization HTTP Logging
+
+

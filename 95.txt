@@ -1,0 +1,11 @@
+Authorization
+Task:
+Whitelist email addresses that have access to GetAddresses() endpoint in AddressController.cs
+Solution:
+Create a variable whitelist to put addresses that have access to this endpoint and then we read the email address
+from our HTTP context, it has a reference to the user and from there we can get our email address when our user
+has already authenticated the whitelist, for example store in your db.
+					1) Put everyone in who has a subscription
+						- If you have a subscription based model for your API or
+						- If it's an internal API for a company, write everyone in there
+						in the configuration who has access to this API, to this endpoint 

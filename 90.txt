@@ -1,0 +1,22 @@
+Secure your API using subscriptions
+CourseAPIManagement service -> APIs -> Courseproject.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null ->
+/Address/Get Get -> Type (Request url)https://courseprojectapimanagement.azure-api.net/Address/Get in browser ->
+{ "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
+
+Why?
+Under Settings Tab -> Subscription required checkbox checked
+
+CourseAPIManagement service -> Subscriptions -> Add subscription
+
+CourseAPIManagement service -> APIs -> Courseproject.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null ->
+/Address/Get Get -> Type (Request url)https://courseprojectapimanagement.azure-api.net/Address/Get?subscription-key=bdce9d97f7b34c0db7bfdd819b32b4ed
+ in browser -> [{"id":"1","street":"string","zip":"string","city":"string","email":"test@test.com","phone":"string"}]
+
+Postman.com -> My workspace -> New HTTP request -> Enter url (https://courseprojectapimanagement.azure-api.net/Address/Get)
+-> Header value from(Under Settings Tab -> Subscriptions section) -> (Ocp-Apim-Subscription-Key) copy paste this 
+Header under Key and the bdce9d97f7b34c0db7bfdd819b32b4ed(key value) in Value -> Send
+
+Usecase:
+This method suits you if you don't have identity users that are really end users using your API.
+But if you more have like other services using your API , 5 other companies using your API(5 subscriptions for each)
+But 1000 of users, you want to use another technique to secure your API. 

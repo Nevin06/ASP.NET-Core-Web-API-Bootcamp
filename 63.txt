@@ -1,0 +1,33 @@
+Dtos Data Transfer Objects 
+0:04
+1) We need to build controller for this entity
+2) We will have different endpoints
+	eg: for getting these employees we have 2 different endpoints,
+		one for getting a list of employees, 				 -> We only need ids, firstname, 
+										lastname
+										not the jobs/teams/addresses they 
+										have
+										=> Different classes for different
+										purposes
+										(Employee List)
+						maybe a filtered list and	-> Filter thay we want to send for 
+										this employee list
+										(Employee Filter)
+										eg: Filters for first name/address/
+										job
+		one for details of the employee for a single employee
+										-> We can add jobs/teams/addresses
+										(Employee Details)
+=> Different representations of our employee that we want to send to our API/ want API to return to client
+(EmployeeCreate) => No need to send identifier as employee doesn't exist so far. 
+										-> job,address, firstname,lastname
+										but not Id
+(EmployeeUpdate)									-> send representation with Id
+(EmployeeDelete)								-> only Id
+
+Entity			Employee
+---------------------------------------------------------------------------------------------------------------
+Dtos
+
+EmployeeCreate		EmployeeDelete		EmployeeDetails		EmployeeList		EmployeeFilter
+

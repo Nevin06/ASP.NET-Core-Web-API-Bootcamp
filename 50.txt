@@ -1,0 +1,21 @@
+1)Enable OpenAPI support
+	Adds visual documentation to our projects so we can view our API in the browser
+	it can act as our API caller endpoints, view the response and so on
+	
+2) launchSettings.json
+	"launchBrowser": true -> launches browser automatically when your API is running
+	"launchUrl": "swagger" -> visual documentation
+3) iis -> Internet Information Services -> Web Server created by Microsoft that supports ASP.NET core
+	Deploy it in iis running in your server
+4) Going to use light weight web server called Kesro(standout for ASP.Net core when u are running it in ur solution
+5) Controllers are the core of ASP.NET core because they provide the endpoints for our API
+	Route is the endpoint of the controller
+	[Route("[controller]")] -> Route to this controller is WeatherForecast
+	[HttpGet(Name = "GetWeatherForecast")] -> Get endpoint
+6) appsettings.json
+	"AllowedHosts": "*" -> which IPs Kesro should allow connection from , if we are running it as a public server
+7) Program.cs 
+	entrypoint of API/application
+	run everytime you start ur web server/ run ur application on the web server
+
+

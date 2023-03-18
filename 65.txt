@@ -1,0 +1,5 @@
+1) Mapping from DTO to entity and from entity to DTO
+Map from our Dtos to our entities using AutoMapper.Extensions.Microsoft.DependencyInjection
+Automapper uses mapping profile
+2) Register this mapping profile, we are going to create a class in buisness layer for registering our services in
+the DI container

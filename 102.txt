@@ -1,0 +1,16 @@
+Logging
+1) Analyze errors and the performance bottlenecks and so on of your software
+2) Serilog framework for logging
+	1) Extensible, flexible
+	2) Always add other logging providers later(say alc logging -> contains 3 components
+									1) Elastic search(which enables you to 
+									quickly search through logs
+							Kebano -> Front-end web UI that you can use to view logs
+								and interact with them
+							Logstash -> Sends your log to the Elasticsearch server
+								Send logs to console so that logstash can grab 
+								these logs and send them to Elastic Search
+							Also can later log to a file, db
+	3) Switch between these methods and it also allows to have several of these logging methods at the same
+	time
+	4) Use logging scopes -> Start logging scope -> Add something to the scope which identifies the request

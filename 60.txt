@@ -1,0 +1,11 @@
+Data model
+0:05
+
+Address 1	<-	Employee	->	1 Job
+			    n
+			    |
+			    v
+			    n
+			  Team
+1) Model will live in Common project
+2) default! -> default null forgiving operator

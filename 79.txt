@@ -1,0 +1,2 @@
+Minimal web APIs
+1) small project with few endpoints

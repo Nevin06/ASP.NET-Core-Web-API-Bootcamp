@@ -1,0 +1,20 @@
+Course Project
+Employee management application or API for that
+	1) Employees have FirstName, LastName, Address
+	2) Assign Jobs so that they participate in teams
+	3) Employees organized into teams
+
+1) Address
+	street,zip,city,email,phone
+	1) Create 2) Update 3) Delete 4) Get using Id 5) Get
+
+2) Employee
+	FirstName, LastName, AddressID, JobID
+	1) Create 2) Update 3) Delete 4) Get using Id 5) Get
+
+3) Job
+	name,description
+	1) Create 2) Update 3) Delete 4) Get using Id 5) Get
+4) Team
+	name, list of employees
+	1) Create 2) Update 3) Delete 4) Get using Id 5) Get

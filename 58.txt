@@ -1,0 +1,9 @@
+1) Don't want .sln in the root of our repository
+	Why?
+	- we want it in a separate folder because we want stuff like documentation, git, ignore files, docker
+=> Move .sln & Courseproject to src(new) folder
+2) Rename our course project because this project is the API project
+=> Courseproject.API
+3) Rename Courseproject.csproj (C# Project File) to Courseproject.API.csproj
+4) Right click Courseproject.sln, open in notepad
+Edit "Courseproject.API", "Courseproject.API\Courseproject.API.csproj"

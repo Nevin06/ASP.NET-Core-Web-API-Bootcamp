@@ -1,0 +1,7 @@
+Repository pattern
+1) Pattern that enables us to decouple our buisness logic(business layer) from our data access layer.
+2) Business layer shouldn't deal with the db concerns
+3) Call 1 method to call students from the db or update the db
+
+4) Don't want to depend on the dbContext directly in our business layer because we just want an interface here
+to mock that and just test that.

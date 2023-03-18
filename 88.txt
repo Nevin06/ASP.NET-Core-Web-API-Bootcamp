@@ -1,0 +1,3 @@
+Test the API
+MS Azure Home -> All resources -> CourseprojectAPIManagement -> APIs -> Courseproject.API -> Different endpoints
+present and we want to test this,so -> Test Tab -> Edit Request body -> Send it

@@ -1,0 +1,16 @@
+HTTP Request Methods
+1)GET
+	1) Retrieve resource from server
+2)POST
+	1) Create a resource on the server
+	2) Sending a representation of resource to server, server handles it and persists this resource
+	3) Everytime you send POST endpoint, something happens
+3)PUT	
+	1) Sending identifier along with all other data to persist this resource
+	2) Everytime you send PUT endpoint, doesnt make any diff if you send this request 1 time/2time,etc
+	2nd time sending this request will be treated as an update.(because request already exists)
+4)DELETE
+	1) Delete a resource
+5)PATCH
+	1) Similar to PUT
+	2) Can do partial updates

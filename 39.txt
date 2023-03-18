@@ -1,0 +1,2 @@
+All our entities are sharing this property Id, then we can create base class for that and use this base class to 
+inherit on its own that we don't want to implement this id property in all our model classes.

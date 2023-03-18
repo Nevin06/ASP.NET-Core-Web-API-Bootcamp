@@ -1,0 +1,6 @@
+The 4 REST Constraints
+Standards
+	1) Shouldn't use POST to retrieve data from the server.
+	2) Shouldn't send a response error code that indicates an error if ur request is successful
+Resources
+	1) Remote procedural call is focused on function and is another protocol

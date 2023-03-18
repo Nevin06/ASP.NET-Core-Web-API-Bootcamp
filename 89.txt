@@ -1,0 +1,5 @@
+Configuration
+1) Set environment variables in Azure
+Azure portal -> All resources -> App Service(courseproject1234987) -> Configuration Tab(side bar)-> Connection 
+settings (connection strings for Oracle/ SQL Server dbs that are encrypted) -> New Application setting(we r using
+Sqlite) -> OK -> Save

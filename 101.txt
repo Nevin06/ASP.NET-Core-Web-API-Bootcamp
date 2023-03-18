@@ -1,0 +1,16 @@
+Azure Blob Storage
+1) Service provided by azure allows to save files,upload these files to this blob storage, manage these files
+also backup capability and some reliability by redundancy and so on
+2) Awesome for file management
+3) Better than saving files in your web server
+
+Azure portal -> Storage account -> Create
+4) Redundant storage -> Files will be in another region
+	-> most expensive, most secure and reliable option
+5) Access tier is hot -> we are constantly uploading and downloading data
+6) Data protection Tab -> Really need backups? then use all of these options
+7) Storage -> Resources -> Top layer of our file system
+		-> In that we have Containers Tab -> folders/directories
+
+Create container
+Access keys -> Copy connection string>> DefaultEndpointsProtocol=https;AccountName=courseprojectstorage;AccountKey=Uv5FxeF3fnfbytXJRt+NfAIQJ7hiw7Y7SFIZnlknybMeMY0n7oxDT/QZc0iXQnDqVMXsoNDuu8wA+AStBx9dLg==;EndpointSuffix=core.windows.net

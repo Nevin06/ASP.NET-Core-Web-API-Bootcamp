@@ -1,0 +1,17 @@
+File Service
+1) When creating Web APIs, often need to work with files
+	eg: employees to have a profile photo,etc
+2) File upload & download -> store files in our project(local file system)
+3) Later Azure blob storage
+
+Task in hand:
+Implement a profile photo so that our employees can have a profile photo
+Make this profile photo optional(not every employee has to have a profile photo)
+
+1) Extend Model Employee.cs
+2) Dto to be able to upload a profile photo and assign it to this employee in ProfilePhotoUpdate.cs
+	IFormFile -> representation of file we're uploading
+3) Interface with which we can save files, delete files, get files IFileService.cs
+4) Implement FileService.cs in Infrastructure layer
+
+

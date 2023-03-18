@@ -1,0 +1,15 @@
+DbContext
+The heart of EF Core
+
+1) Represents your session with the database
+0:18
+Db Sets
+	(Address, Student, Professor, Class) -> (Address, Student, Professor, Class)
+	Entity types				For each of this entity type, you have 1 Db Set in your DbContext
+2) Db Set then represents all the entities you can work on your data source
+0:52
+DbContext is designed as a UOW(Unit of Work)
+3) You have entities and you do changes on them, do all these changes locally, DbContext keeps track of them
+Call one method(eg: Save changes) , all the changes in your DbContext are persisted to your Database
+DbContext is a short lived instance(load your entities, do your buisness case, close the connection, 
+dispose the dbcontext and start with a fresh one)

@@ -1,0 +1,2 @@
+LINQ -> To work with different data sources(databases, web services)
+EF Core -> Data Access framework, we use with our database

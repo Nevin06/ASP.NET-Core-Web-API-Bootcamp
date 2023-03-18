@@ -1,0 +1,22 @@
+EF Core
+1) Most popular data access framework in C#
+2) ORM - Object Relational Mapping
+0:23
+It can map our C# Objects (Person class) to a db table(Persons) and reverse mapping
+It is done automatically and saves us a lot of time.
+
+0:39
+3) The heart of EF Core
+1) Data model(Entities) 	Model classes are called entities
+	1) Client	Lawyer		Case		(Basically our resources)
+
+2) Db Context(Represents Database Session)
+
+
+
+4) Supports a wide range of DBMS
+5) Creates a DB from code
+6) Generate Entities and DbContext from Database
+7) Supports LINQ (write linq queries in c# code and they translate into sql)
+8) Reduces the code needed for data access (takes over a lot of tasks from you automatically without reqing you
+to write any code for that)

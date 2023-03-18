@@ -1,0 +1,8 @@
+API Configuration
+1) Install nuget package Microsoft.Identity.Web
+Jwt -> Java web tokens
+2) Don't commit launchSettings.json with your client secret because that wouldn't be good.
+As client secret is data that you should protect and you shouldn't commit it to your git repository. => mark it as
+ gitignore
+3) oidc is just on top of OAuth
+

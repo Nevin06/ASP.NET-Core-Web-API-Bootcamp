@@ -1,0 +1,2 @@
+Generic Repository
+Is a repository that you can use for all type of entities

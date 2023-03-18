@@ -1,0 +1,5 @@
+Database First
+
+1) USE EFCore tools to generate DbContext and Entities from our existing DB
+
+dotnet ef dbcontext scaffold "filename=EFCoreAcademy.db" Microsoft.EntityFrameworkCore.Sqlite

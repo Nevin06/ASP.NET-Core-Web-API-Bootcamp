@@ -1,0 +1,19 @@
+Asynchronous Programming 
+using Async Await(Easy way to implement Asynchronous execution in C#)
+
+1) Execute code without blocking your Application
+
+Synchronous Execution(Blocking)
+0:22
+In ASP .NET core , we have a thread pool(has limited no of threads)
+5th thread can execute only after 4 threads complete their long running operation
+
+Asynchronous Execution(Non Blocking)
+1:35
+Releasing thread again so that the 5th thread can be instantly processed by our server
+
+2:48
+1) status of this method is "Task" because we want to release this method
+2) once it reaches "await", pauses method and returns the Task with status "incomplete"
+3) AddressRepository is waiting for response from database
+4) once db is responding, we continue with return statement

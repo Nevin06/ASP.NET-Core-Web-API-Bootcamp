@@ -1,0 +1,12 @@
+Create the App Service
+1) An app service is just a fully managed web hosting service and we can use the service to host our API
+
+Create a resource -> app service(search) -> Web App
+
+2) Deployment Tab
+Don't want to use continuous deployment because we are just going to deploy Web application from visual studio
+
+3) Monitoring Tab
+Enable Application Insights -> This is just for logging and some metrics about our application
+
+Publish our course project to this app service

@@ -1,0 +1,18 @@
+LINQ Introduction
+1) Standard technology for queries in C#
+2) C# language construct for querying data from different sources(databases, web services, files)
+0:45
+
+var names = new [] {"John","Maria","Jim"};
+var namesStartingWithJ = names.Where(n => n.StartsWith("J"));
+				     name lambda operator 
+					  returns a boolean
+					<condition>
+
+Call fn on names array, fn is called where(linq namespace)
+
+3) LINQ can be translated into SQL(querying data from databases)
+4) only 1 query language
+5) no queries as strings
+
+

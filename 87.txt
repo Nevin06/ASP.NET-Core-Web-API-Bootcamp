@@ -1,0 +1,7 @@
+Deploy (course project) to Azure
+
+CourseProject.API -> right click Publish -> Azure -> Azure App Service(Windows) -> Sign into MS Azure account 
+						(Publishing profile : contains all the information that we need to
+						deploy our application)
+-> Resource Group>>Resource Group>>App Service -> API Management Tab(Test our api later in Azure) -> Create new
+API Management service(Takes time) -> Finish

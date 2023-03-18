@@ -1,0 +1,25 @@
+Authentication & Authorization using Microsoft Identity Platform and Azure AD
+-> Secure API
+
+Authentication is about who the user is
+-> who is using the API and be sure about it through credentials
+
+Authorization is about, what the user is allowed to do
+-> to perform acion in API, have right permissions
+
+Authentication -> Authorization 
+
+0:59
+The old way
+Authentication(username and password in browser eg:) -> send it to API -> checked in db -> user in (Security issues)
+1:31
+OAuth 2 Authorization Code Flow
+Browser ->(Login) Web App ->(Authorize [Authorization endpoint]) Identity Provider{1} ->(Redirect to Login) Browser ->(Login & Approve)
+Identity Provider ->(Authorization code) -> Web App -> (Authorization code, Client Id, ClientSecret)
+Identity Provider ->(Access Token) -> Web App ->(Call Endpoint using Access Token) -> Web API ->(HTTP response)
+-> Web App
+
+OAuth 2 => Authorization protocol, Authorization framework, MS provides so called Identity provider for this 
+Web App => Single page application/ ASP.NET Core MVC application
+{1}Identity provider => MS
+{1}Registered application , we have told MS we have this application that we need authorization for

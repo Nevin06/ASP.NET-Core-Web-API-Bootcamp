@@ -1,0 +1,11 @@
+App Registration
+Azure portal -> Azure active directory(to authenticate users later) -> App registrations(left side bar) -> 
+New Registration -> copy Application Id & Tenant Id -> Expose an API -> Add a scope(paste Application Id) ->
+copy scope -> Certificates & secrets(left side bar) -> New client secret -> copy client secret -> Overview(left side abr)
+-> copy Primary domain
+
+155431cf-d21f-4571-85c2-cc4c56813eb9
+95b1708b-228c-43e7-918c-a4bc486c08f3
+api://155431cf-d21f-4571-85c2-cc4c56813eb9/GeneralAccess
+I638Q~.h-DyGL5iFfPScEML3mO44Bto6eXjcBcMz
+thomasnevinkgmail.onmicrosoft.com
