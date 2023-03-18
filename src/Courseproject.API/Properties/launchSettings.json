@@ -1,0 +1,56 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:27194",
+      "sslPort": 44359
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5186",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7289;http://localhost:5186",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DB_FILENAME": "Test.db", //89
+        //93
+        "CLIENT_ID": "155431cf-d21f-4571-85c2-cc4c56813eb9",
+        "TENANT_ID": "95b1708b-228c-43e7-918c-a4bc486c08f3",
+        "CLIENT_SECRET": "I638Q~.h-DyGL5iFfPScEML3mO44Bto6eXjcBcMz",
+        "AD_DOMAIN": "thomasnevinkgmail.onmicrosoft.com",
+        "CALLBACK_PATH": "/signin-oidc",
+        "IDENTITY_INSTANCE": "https://login.microsoftonline.com",
+        //96
+        "AUTH_URL": "https://login.microsoftonline.com/95b1708b-228c-43e7-918c-a4bc486c08f3/oauth2/v2.0/authorize",
+        "TOKEN_URL": "https://login.microsoftonline.com/95b1708b-228c-43e7-918c-a4bc486c08f3/oauth2/v2.0/token",
+        "SCOPE": "api://155431cf-d21f-4571-85c2-cc4c56813eb9/GeneralAccess",
+        //101
+        "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=courseprojectstorage;AccountKey=Uv5FxeF3fnfbytXJRt+NfAIQJ7hiw7Y7SFIZnlknybMeMY0n7oxDT/QZc0iXQnDqVMXsoNDuu8wA+AStBx9dLg==;EndpointSuffix=core.windows.net",
+        "AZURE_STORAGE_CONTAINER_NAME": "uploads"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
